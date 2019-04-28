@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "RESTful API with Mongodb, Express and Node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noracamacho/MVC-Postal-Express.git"
+  },
+  "keywords": [
+    "Mongodb",
+    "Express",
+    "NodeJs"
+  ],
+  "author": "Nora Camacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noracamacho/MVC-Postal-Express/issues"
+  },
+  "homepage": "https://github.com/noracamacho/MVC-Postal-Express#readme"
+}
