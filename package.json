@@ -4,6 +4,7 @@
   "description": "RESTful API with Mongodb, Express and Node js",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "standard"
   },
   "repository": {
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/noracamacho/MVC-Postal-Express/issues"
   },
-  "homepage": "https://github.com/noracamacho/MVC-Postal-Express#readme"
+  "homepage": "https://github.com/noracamacho/MVC-Postal-Express#readme",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.3"
+  }
 }
