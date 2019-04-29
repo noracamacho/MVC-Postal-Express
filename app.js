@@ -21,17 +21,17 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.send('Mongo Express.... Porfavor use /api/postales');
 });
-app.get('/api/postales',auth, PostalController.inq); //1
-app.get('/api/postales/:id',auth, PostalController.inqId);
-app.get('/api/postales/codigos/:codigo',auth, PostalController.inqByCP);
-app.get('/api/codigos/ciudades',auth, PostalController.inqCiudad);
-app.get('/api/municipios',auth, PostalController.inqMnpio);
-app.get('/api/municipios/ciudades/:munName',auth, PostalController.inqCiudadByMnpio);
-app.get('/api/municipios/iguales/colonias/:munName',auth, PostalController.inqColBySameMnpio);
-app.get('/api/municipios/similares/colonias/:munName',auth, PostalController.inqColBySimilarMnpio);
-app.get('/api/colonias/codigos/:codigo',auth, PostalController.inqColByCP);
-app.get('/api/colonias',auth, PostalController.inqColonia);
-app.get('/api/codigos',auth, PostalController.inqCP);
+app.get('/api/postales', PostalController.inq); 
+app.get('/api/postales/:id', PostalController.inqId);
+app.get('/api/postales/codigos/:codigo', PostalController.inqByCP);
+app.get('/api/codigos/ciudades', PostalController.inqCiudad);
+app.get('/api/municipios', PostalController.inqMnpio);
+app.get('/api/municipios/ciudades/:munName', PostalController.inqCiudadByMnpio);
+app.get('/api/municipios/iguales/colonias/:munName', PostalController.inqColBySameMnpio);
+app.get('/api/municipios/similares/colonias/:munName', PostalController.inqColBySimilarMnpio);
+app.get('/api/colonias/codigos/:codigo', PostalController.inqColByCP);
+app.get('/api/colonias', PostalController.inqColonia);
+app.get('/api/codigos', PostalController.inqCP);
 
 //4.- Encender webserver y dbserver
 app.listen(port, () => {
